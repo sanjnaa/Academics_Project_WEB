@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<style>
+body
+{
+font-family:arial;
+margin:0;
+border:0px;
+background-color:#cbccd2;
+}
+
+#nav
+{
+width:100%;
+height:500px;
+background:url(maharaja1.jpg);
+background-size:cover;
+}
+
+#logo
+{
+margin:80px 0px 0px 530px;
+align:right;
+width:200px;
+height:100px;
+}
+
+#nav_wrapper{
+height:100px;
+width:820px;
+background:black;
+margin-left:auto;
+margin-right:auto;
+margin-top:100px;
+opacity:0.6;
+filter:alpha(opacity=60);
+
+}
+#nav_wrapper ul li{
+list-style:none;
+display:inline;
+font-weight:bold;
+padding:10px
+}
+
+
+#nav_wrapper a{
+color:white;
+text-decoration:none;
+padding:10px;
+}
+
+
+#nav_wrapper ul li:hover
+{
+background:hsla(0, 100%, 50%,1.0);
+tarnsition:all0.45s;
+}
+
+
+
+
+#nav_follow
+{
+color:white;
+margin-top:0px;
+word-spacing:5px;
+text-align:right;
+background:black;
+width:100%;
+height:30px;
+opacity:0.5;
+filter:alpha(opacity=50);
+}
+
+
+#no_1
+{
+margin-left:30px;
+margin-top:25px;
+margin-bottom:30px;
+background:white;
+width:400px;
+height:500px;
+}
+
+
+#header
+{
+
+padding:15px;
+background:#0891e4;
+color:white;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+
+box-shadow:1px 0px 5px #0891e4;
+}
+
+input{display:block;margin:10px;}
+input[type=text],input[type=password]
+{
+font-size:15px;
+padding:10px;
+border-radius:3px;
+border:1px solid#ddd;
+}
+input[type=submit]
+{
+background:#0891e4;
+padding:10px 15px 10px 15px;
+border:1px;
+border-radius:3px solid#0891e4;
+color:white;
+font-weight:bold;
+box-shadow:1px 0px 5px #0891e4;
+}
+
+
+#form
+{
+display:flex;
+justify-content:center;
+}
+
+#form button
+{
+background:#0891e4;
+padding:10px 15px 10px 15px;
+border:1px;
+border-radius:3px solid#0891e4;
+color:white;
+font-weight:bold;
+box-shadow:1px 0px 5px #0891e4;
+}
+
+
+
+#no_2
+{
+background:white;
+margin-left:470px;
+margin-top:-530px;
+margin-bottom:30px;
+width:400px;
+height:235px;
+}
+
+#no_3
+{
+background:url(digital-india1.jpg);
+background-size:cover;
+margin-left:900px;
+margin-top:-265px;
+margin-bottom:30px;
+width:400px;
+height:235px;
+}
+#no_3 button
+{
+margin-top:145px;
+background:#0891e4;
+padding:10px 15px 10px 15px;
+border:1px;
+border-radius:3px solid#0891e4;
+color:white;
+font-weight:bold;
+box-shadow:1px 0px 5px #0891e4;
+}
+
+#no_4
+{
+background:white;
+margin-left:470px;
+margin-top:0px;
+margin-bottom:30px;
+width:830px;
+height:235px;
+}
+
+
+#copyright
+{
+margin-top:40px;
+background:rgb(61, 59, 62);
+color:white;
+padding:35px;
+text-align:center;
+width:94.5%;
+height:20px;
+}
+
+
+#copyright a
+{
+color:white;
+text-decoration:none;
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+	
+	<div id="nav">
+	<div id="nav_follow">
+			<marquee>Follow Us On
+			<a href="https://www.facebook.com"><img src="fb_twitter.png" width="30px" height="30px"></a>
+			<a href="https://www.twitter.com"><img src="FB_twitter_0.png" width="30px" height="30px"></marquee></a>
+			</div>
+			<div id="logo">
+			<img src="safar.png" width="350px" height="150px">
+			</div>
+	
+				<div id="nav_wrapper"><br>
+				<center>
+				<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="login 2.html">Train Tickets</a></li>
+				<li><a href="hospitality.html">Hospitality</a></li>
+				<li><a href="team.html">Our Team</a></li>
+				<li><a href="contact us.html">Contact Us</a></li>
+				<li><a href="about us.html">About Us</a></li>
+				</ul>
+				</div>
+				</center>
+			
+	
+	</div>
+	<div id="no_1">
+		<div id="header">
+		LOGIN
+		</div><br>
+		<body style=text-align:center;><br>You have to login first in order to book/generate bill/cancel the ticket<br><br92><br>
+		</body>
+		<div id="form">
+			
+			
+			<form name="myform" method="post" onsubmit="return f2()">
+				
+			<input type="text" name="username" placeholder="username" />
+			<input type="password" name="pass" placeholder="password"/>
+			
+			<input type="submit" name="Login"/>
+			</form>
+			<script>
+			function f1() 
+				{
+ 			   		window.open("reservationform.html");
+				}
+			function f2()
+				{
+					var x=document.myform.username.value;
+					var y=document.myform.pass.value;
+					if(x=="manish" && y=="manisH@123")
+					{
+						f1();
+						return true;
+					}
+					else if(x==null||x=="")
+					{
+						alert("Name Can't be blank");
+						return false;
+					}
+					else if(y.length<6)
+					{
+						alert("Password must be at leat 6 characters long.");
+						return false;
+					}
+					
+					else
+					{
+						alert("Not Registerd");
+						return false;
+					}
+				}
+			</script>
+		</div>
+	</div>
+
+	<div id="no_2">
+	<h2><marquee>LIVE TRAIN STATUS</marquee></h2>
+	<a href="train status.html"><img src="photo.png" width="150px" height="150px"></a>
+	</div>
+
+	<div id="no_3">
+	<h2><marquee>The World Is Going Digital...Are You</marquee></h2>
+	</div>
+
+	<div id="no_4">
+	<img src="maharaja4.jpg" width="276.66px" height="235px" align="left">
+	<img src="maharaja5.jpg" style="margin:0px 0px 0px -5px" height="235px" width="276.66px">
+	<img src="maharaja7.jpg" width="276.66px" height="235px">
+	</div>
+	
+
+<div id="copyright">
+Copyright © 2018 Safar,<a href="#"> Inc. All Rights Reserved.</a> |
+<a href="#">Terms and Conditions</a> | 
+<a href="#">Privacy Policy</a> | 
+<a href="#">Site map</a>
+</div>
+</body>
+</html>
