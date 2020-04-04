@@ -1,0 +1,183 @@
+<html>
+<style>
+/*body{font-family: verdana;}*/
+.bgimg{background-image: url("maharaja.jpg");
+ height: 500px;
+ width:100%;
+ background-repeat: no-repeat;
+ border-radius: 15px;
+}
+.login{
+height:80px;
+width:700px;
+background:black;
+margin:250px 100px 100px 300px;
+opacity:0.7;
+filter:alpha(opacity=50);	
+font-size: 50px;
+color: white;
+text-align: center;
+font-weight: bold;
+font-family: arial;
+font-variant: small-caps;
+}
+.login1
+{
+	margin:-130px 10px 10px 300px;
+	height:130px;
+	width:700px;
+	background-color: fuchsia ;}
+
+.nap
+{color:white;
+	 font-family: verdana;
+	 font-weight:bold;
+	 font-variant: small-caps;
+     margin:0px 30px 30px 30px;
+     font-size: 40px;
+}
+div#back_glob
+{   
+	background-color: white;
+	border:1px solid #25b2d5;
+	width:350px;
+	height:250px;
+	margin:-130px 50px 50px 470px ;
+	box-shadow: 1px 0px 15px #25b2d5;
+}
+input
+{
+	display:block;
+	margin:10px;
+}
+div#back_header
+{
+    background-color: #25b2d5;
+    text-align: center;
+    font-size: 22px;
+    font-weight:bold;
+    color: white;
+    padding:20px;
+}
+input[type=text],input[type=password]
+{   font-size: 15px;
+	padding: 10px;
+	border-radius: 3px;
+	border:1px solid #ddd;
+}
+input[type=submit]
+{
+	background-color: #25b2d5;
+	border:1px solid #319db8;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	font-weight: bold;
+	border-radius: 3px;
+}
+div#backform
+{
+	display:flex;
+	justify-content: center;
+
+}
+
+#copyright
+{
+margin-top:40px;
+background:rgb(61, 59, 62);
+color:white;
+padding:35px;
+text-align:center;
+width:94.5%;
+height:20px;
+}
+
+
+#copyright a
+{
+color:white;
+text-decoration:none;
+}
+
+
+
+
+
+
+
+</style>
+<body style="background-color: gainsboro">
+<div class="bgimg"></div><br>
+        <!--<div class="login">
+        <p style="font-family: verdana;">Login</p>
+        </div>
+</div>
+<div class="login1">
+<p class="nap">Login to your account below to book your tickets</p><br>
+
+</div>
+<br>-->
+
+
+<div id="back_glob">
+  
+             <div id="back_header">
+                   LOGIN
+             </div>
+
+     <div id="back_form">
+       <form name="myform" method="post" onsubmit="return f2()">
+				
+			<input type="text" name="username" placeholder="username" />
+			<input type="password" name="pass" placeholder="password"/>
+			
+			<input type="submit" name="Login"/>
+			</form>
+			<script>
+			function f1() 
+				{
+ 			   		window.open("reservationform.html");
+				}
+			function f2()
+				{
+					var x=document.myform.username.value;
+					var y=document.myform.pass.value;
+					if(x==8440875912 && y=="manish")
+					{
+						f1();
+						return true;
+					}
+					else if(x==null||x=="")
+					{
+						alert("Name Can't be blank");
+						return false;
+					}
+					else if(y.length<6)
+					{
+						alert("Password must be at leat 6 characters long.");
+						return false;
+					}
+					
+					else
+					{
+						alert("Not Registerd");
+						return false;
+					}
+				}
+			</script>
+		
+       </div>
+
+   </div>
+
+<div id="copyright">
+Copyright © 2018 Safar,<a href="#"> Inc. All Rights Reserved.</a> |
+<a href="#">Terms and Conditions</a> | 
+<a href="#">Privacy Policy</a> | 
+<a href="#">Site map</a>
+</div>
+  
+
+
+   </body>
+   </html>    
